@@ -1,16 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React, { Fragment } from 'react';
 import './App.css'
+import Header from './Components/header/Header.jsx';
+import Footer from './Components/footer/Footer.jsx';
+import Banner from './pages/banner/BannerPage.jsx';
+import { Topheader } from './Components/Topheader/Topheader.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
-  return (
+
+
+  return [
     <>
-      <h1>Hello World</h1>
+    <Topheader/>
+    <Header />
+    <Banner/>
+    <Footer />
     </>
-  )
+  ]
 }
 
+
 export default App
+
