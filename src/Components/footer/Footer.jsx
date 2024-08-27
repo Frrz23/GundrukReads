@@ -3,38 +3,43 @@ import Logo from "../../assets/Images/logo/logo5.png";
 
 const Footer = () => {
   return (
-    <footer className="font-poppins bg-white text-black p-6">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center ">
-        <div className="mb-6 md:mb-0">
-          <img src={Logo} alt="SastoBazar" className="h-16 mb-4 md:mb-0" />
-          <p className="text-sm text-gray-400">Your one-stop shop for all your needs.</p>
+    <footer className="font-poppins bg-gray-800 text-white p-3 -mb-2">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-start text-left">
+      <div className="flex flex-col items-start mb-6 md:mb-0 relative -ml-10">
+      <img src={Logo} alt="GundrukReads" className="h-24 w-auto mb-4 " />
+          <p className="text-lg  text-gray-400">Your one-stop shop for all your manga needs.</p>
         </div>
-        <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
-          <a href="#" className="hover:underline">Home</a>
-          <a href="#" className="hover:underline">Shop</a>
-          <a href="#" className="hover:underline">About Us</a>
-          <a href="#" className="hover:underline">Contact</a>
-          <a href="#" className="hover:underline">FAQ</a>
+
+        <div className="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6 mt-10 mr-48 text-lg">
+          <a href="#" className="hover:text-gray-300 transition-colors">Home</a>
+          <a href="#" className="hover:text-gray-300 transition-colors">Shop</a>
+          <a href="#" className="hover:text-gray-300 transition-colors">About Us</a>
+          <a href="#" className="hover:text-gray-300 transition-colors">Contact</a>
+          <a href="#" className="hover:text-gray-300 transition-colors">FAQ</a>
         </div>
-        <div className="flex space-x-4 mt-4 md:mt-0">
-          <a href="#" aria-label="Facebook" className="text-gray-300 hover:text-gray-500">
-            <FiFacebook className="h-5 w-5" />
+
+        {/* Social Media Icons */}
+        <div className="flex space-x-4 mt-4 pt-7  md:mt-0 -mr-10">
+          <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-gray-300 transition-colors">
+            <FiFacebook className="h-6 w-6" />
           </a>
-          <a href="#" aria-label="Twitter" className="text-gray-300 hover:text-gray-500">
-            <FiTwitter className="h-5 w-5" />
+          <a href="#" aria-label="Twitter" className="text-gray-400 hover:text-gray-300 transition-colors">
+            <FiTwitter className="h-6 w-6" />
           </a>
-          <a href="#" aria-label="Instagram" className="text-gray-300 hover:text-gray-500">
-            <FiInstagram className="h-5 w-5" />
+          <a href="#" aria-label="Instagram" className="text-gray-400 hover:text-gray-300 transition-colors">
+            <FiInstagram className="h-6 w-6" />
           </a>
-          <a href="#" aria-label="LinkedIn" className="text-gray-300 hover:text-gray-500">
-            <FiLinkedin className="h-5 w-5" />
+          <a href="#" aria-label="LinkedIn" className="text-gray-400 hover:text-gray-300 transition-colors">
+            <FiLinkedin className="h-6 w-6" />
           </a>
         </div>
       </div>
-      <div className="mt-6 border-t border-gray-700 pt-4 text-center text-sm">
+      <div className=" border-t border-gray-600 pt-7  text-center text-sm space-y-1">
         <p>&copy; 2024 GundrukReads. All rights reserved.</p>
         <p>
-          <a href="#" className="hover:underline">Privacy Policy</a> | <a href="#" className="hover:underline">Terms of Service</a> | <a href="#" className="hover:underline">Refund Policy</a>
+          <a href="#" className="hover:text-gray-300 transition-colors">Privacy Policy</a> | 
+          <a href="#" className="hover:text-gray-300 transition-colors">Terms of Service</a> | 
+          <a href="#" className="hover:text-gray-300 transition-colors">Refund Policy</a>
         </p>
       </div>
     </footer>
