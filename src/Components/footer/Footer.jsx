@@ -1,46 +1,55 @@
 import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin } from "react-icons/fi";
 import Logo from "../../assets/Images/logo/logo5.png";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="font-poppins bg-gray-800 text-white p-3 -mb-2">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-start text-left">
-      <div className="flex flex-col items-start mb-6 md:mb-0 relative -ml-10">
-      <img src={Logo} alt="GundrukReads" className="h-24 w-auto mb-4 " />
-          <p className="text-lg  text-gray-400">Your one-stop shop for all your manga needs.</p>
+    <footer className="font-mono mt-10 p-6 max-w-full  bg-gray-50 shadow-md " >
+      <div className=" flex justify-between  w-full  ">
+      <div>
+      <img src={Logo} alt="GundrukReads" className="h-36 mb-4  " />
+      </div> 
+      <div className="flex space-x-14 ">
+        <div className="flex flex-col ">
+        <p className="font-bold text-[22px]  mb-2">About</p>
+        <div className="flex flex-col space-y-2 text-[13px] pl-0.5">
+        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500 ">Our Mission</a>
+        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Blog</a>
+        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Vision</a>
+        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Team</a>
+        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Achievents & Awards</a>
         </div>
-
-        <div className="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6 mt-10 mr-48 text-lg">
-          <a href="#" className="hover:text-gray-300 transition-colors">Home</a>
-          <a href="#" className="hover:text-gray-300 transition-colors">Shop</a>
-          <a href="#" className="hover:text-gray-300 transition-colors">About Us</a>
-          <a href="#" className="hover:text-gray-300 transition-colors">Contact</a>
-          <a href="#" className="hover:text-gray-300 transition-colors">FAQ</a>
         </div>
+        <div className="flex flex-col ">
+        <p className="font-bold text-[22px]  mb-2">Follow Us</p>
+        <div className="flex flex-col space-y-2 text-[13px] pl-0.5">
+        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500 ">Facebook</a>
+        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Instagram</a>
+        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Twitter</a>
+        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Linkdin</a>
+        </div>
+        </div>
+        <div className="flex flex-col ">
+        <p className="font-bold text-[22px]  mb-2">Service</p>
+        <div className="flex flex-col space-y-2 text-[13px] pl-0.5">
+        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500 ">FAQ</a>
+        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Chat With Us</a>
+        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Payment</a>
+        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Order</a>
+        </div>
+        </div>
+        <div className="flex flex-col ">
+        <p className="font-bold text-[22px]  mb-2">Legal</p>
+        <div className="flex flex-col space-y-2 text-[13px] pl-0.5">
+        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500 ">Terms & Conditions</a>
+        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Privacy Policy</a>
 
-        {/* Social Media Icons */}
-        <div className="flex space-x-4 mt-4 pt-7  md:mt-0 -mr-10">
-          <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-gray-300 transition-colors">
-            <FiFacebook className="h-6 w-6" />
-          </a>
-          <a href="#" aria-label="Twitter" className="text-gray-400 hover:text-gray-300 transition-colors">
-            <FiTwitter className="h-6 w-6" />
-          </a>
-          <a href="#" aria-label="Instagram" className="text-gray-400 hover:text-gray-300 transition-colors">
-            <FiInstagram className="h-6 w-6" />
-          </a>
-          <a href="#" aria-label="LinkedIn" className="text-gray-400 hover:text-gray-300 transition-colors">
-            <FiLinkedin className="h-6 w-6" />
-          </a>
+        </div>
         </div>
       </div>
-      <div className=" border-t border-gray-600 pt-7  text-center text-sm space-y-1">
-        <p>&copy; 2024 GundrukReads. All rights reserved.</p>
-        <p>
-          <a href="#" className="hover:text-gray-300 transition-colors">Privacy Policy</a> | 
-          <a href="#" className="hover:text-gray-300 transition-colors">Terms of Service</a> | 
-          <a href="#" className="hover:text-gray-300 transition-colors">Refund Policy</a>
-        </p>
+      </div>
+      <div className=" border-t border-gray-600 pt-7  text-center text-[15px] space-y-0.5 mt-2">
+        <p className="-mb-4">&copy; 2024 GundrukReads. All rights reserved.</p>
       </div>
     </footer>
   );
