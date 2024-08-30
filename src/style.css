@@ -1,0 +1,6 @@
+.input-field{
+    @apply border text-gray-700 rounded-lg p-2 text-[15px]
+}
+.label-field{
+    @apply text-[18px]
+}

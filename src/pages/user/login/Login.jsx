@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Login = () => {
   return (
     <>
-      <div className="font-poppins w-[35rem] mx-auto mt-8 p-4 bg-white shadow-md rounded-md my-2 ">
+      <div className="font-poppins w-[30rem] mx-auto  p-5 bg-white shadow-md rounded-md my-20 border ">
         <h2 className="text-2x2 font-semibold mb-4 text-center">Login</h2>
         <form action="">
           <div className="mb-4">

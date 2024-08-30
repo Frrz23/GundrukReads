@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="font-mono mt-10 p-6 max-w-full  bg-gray-50 shadow-md " >
+    <footer className="font-mono mt-10 p-6  max-w-full  bg-white shadow-md border " >
       <div className=" flex justify-between  w-full  ">
       <div>
       <img src={Logo} alt="GundrukReads" className="h-36 mb-4  " />
@@ -17,7 +17,7 @@ const Footer = () => {
         <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Blog</a>
         <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Vision</a>
         <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Team</a>
-        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Achievents & Awards</a>
+        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Achievements  & Awards</a>
         </div>
         </div>
         <div className="flex flex-col ">
