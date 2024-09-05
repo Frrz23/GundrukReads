@@ -1,13 +1,16 @@
 import react from 'react';
 import { FiSearch,FiShoppingCart,FiHeart } from "react-icons/fi";
 import Logo from "../../assets/Images/logo/logo5.png";
+import { NavLink } from 'react-router-dom';
 
 const Header=()=>{
     return(
         <>
        <header className="font-poppins flex items-center justify-evenly  pb-4 pt-2 bg-white-200">
         <div className="flex itmes-center">
-        <img src={Logo} alt="logo" className="w-full h-20 "/>
+       <NavLink to="/">
+       <img src={Logo} alt="logo" className="w-full h-20 "/>
+       </NavLink>
         </div>
         <div className="flex items-center justify-center w-2/5 relative">
           <input

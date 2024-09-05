@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="flex flex-col ">
         <p className="font-bold text-[22px]  mb-2">About</p>
         <div className="flex flex-col space-y-2 text-[13px] pl-0.5">
-        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500 ">Our Mission</a>
+        <NavLink to="/Aboutus" className="no-underline  text-slate-700 hover:underline hover:text-red-500 ">Our Mission</NavLink>
         <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Blog</a>
         <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Vision</a>
         <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Team</a>
@@ -41,8 +41,8 @@ const Footer = () => {
         <div className="flex flex-col ">
         <p className="font-bold text-[22px]  mb-2">Legal</p>
         <div className="flex flex-col space-y-2 text-[13px] pl-0.5">
-        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500 ">Terms & Conditions</a>
-        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Privacy Policy</a>
+        <NavLink to="/gundrukreads-conditions" className="no-underline  text-slate-700 hover:underline hover:text-red-500 ">Terms & Conditions</NavLink>
+        <NavLink to="/gundrukreads-policies" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Privacy Policy</NavLink>
 
         </div>
         </div>

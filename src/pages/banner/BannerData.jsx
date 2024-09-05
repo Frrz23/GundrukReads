@@ -1,14 +1,15 @@
 import Firstbanner from "../../assets/Images/cover/cover1.jpg";
-import Secondbanner from "../../assets/Images/cover/cover2.jpg";
-import Thirdbanner from "../../assets/Images/cover/cover3.jpg";
-import Fourthbanner from "../../assets/Images/cover/cover4.jpg";
+import Secondbanner from "../../assets/Images/img/cover2.jpg";
+import Thirdbanner from "../../assets/Images/img/cover3.jpg";
+import Fourthbanner from "../../assets/Images/cover/cover6.png";
 export const items=[{
     id:1,
     title:"BannerOne",
     visit:"/",
-    Image:Firstbanner,
+    Image:Firstbanner 
 },
 {
+    
     id:2,
     title:"BannerTwo",
     visit:"/",
@@ -21,7 +22,7 @@ export const items=[{
     Image:Thirdbanner,
 },
 {
-    id:3,
+    id:4,
     title:"BannerFourth",
     visit:"/",
     Image:Fourthbanner,
