@@ -13,7 +13,7 @@ import Policies from './pages/policies/Policies.jsx';
 import Pagenotfound from './pages/notfound/Pagenotfound.jsx';
 import Aboutus from './pages/aboutus/Aboutus.jsx';
 import Learnmore from './pages/learnmore/Learnmore.jsx';
-import Productview from './pages/product/Productview.jsx';
+import Productview from './pages/product/ProductView.jsx';
 function App() {
   const [products, setProducts] = useState([]);
   const [isLoading, setLoading] = useState(false);
@@ -21,9 +21,14 @@ function App() {
     const fetchedData = async () => {
       setLoading(true);
       try {
-        const response = await fetch(`https://fakestoreapi.com/products`);
+        const response = await fetch(`https://potterapi-fedeperin.vercel.app/en/books`);//https://freetestapi.com/api/v1/books https://freetestapi.com/api/v1/books
         const data = await response.json();
-        setProducts(data);
+        const productsWithCustomData = data.map((product, index) => ({
+          ...product,
+          price: 100 + index * 10, // Custom price logic (example: incrementing by 10)
+        }));
+
+        setProducts(productsWithCustomData);
       } catch (error) {
         console.log(error);
       } finally {
@@ -47,7 +52,7 @@ function App() {
         <Route path='*' element={<Pagenotfound />}></Route>
         <Route path='/aboutus' element={<Aboutus/>}></Route>
         <Route path='/more-info' element={<Learnmore/>}></Route>
-        <Route path='/product-view/id' element={<Productview isLoading={isLoading} products={products} />} ></Route>
+        <Route path='/product-view/:number' element={<Productview isLoading={isLoading} products={products} />} ></Route>
 
         
        

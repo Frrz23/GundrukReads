@@ -4,15 +4,21 @@ import ProductCard from "./ProductCard";
 const Products = () => {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [visibleProducts, setVisibleProducts] = useState(12);
+  const [visibleProducts, setVisibleProducts] = useState(10);
 
   useEffect(() => {
     const fetchedData = async () => {
       setIsLoading(true);
       try {
-        const res = await fetch(`https://fakestoreapi.com/products`);
+        const res = await fetch(`https://potterapi-fedeperin.vercel.app/en/books`);
         const data = await res.json();
-        setProducts(data);
+
+        const productsWithCustomData = data.map((product, index) => ({
+          ...product,
+          price: 100 + index * 10, // Custom price logic (example: incrementing by 10)
+        }));
+
+        setProducts(productsWithCustomData);
       } catch (error) {
         console.log(error);
       } finally {
@@ -30,7 +36,7 @@ const Products = () => {
   return (
     <>
       <div className="font-poppins p-4">
-        <h1 className="text-2xl font-semibold mb-4 px-24">Trending Products</h1>
+        <h1 className="text-2xl font-semibold mb-4 px-24">Trending Books</h1>
       </div>
       {isLoading ? (
         <div className="text-center">

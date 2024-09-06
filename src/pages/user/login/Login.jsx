@@ -17,7 +17,7 @@ const Login = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Corrected typo here
+    e.preventDefault(); 
     try {
       const config = {
         method: "POST",
@@ -26,7 +26,7 @@ const Login = () => {
         },
         body: JSON.stringify(loginValue)
       };
-      const res = await fetch('http://httpbin.org/post', config); // Corrected syntax here
+      const res = await fetch('http://httpbin.org/post', config); 
       if (res.ok) {
         toast.success("Logged in successfully!");
       } else {

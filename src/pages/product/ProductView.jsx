@@ -4,14 +4,14 @@ import { useParams } from "react-router-dom";
 const ProductView = ({ products, isLoading }) => {
   const [singleProduct, setSingleProduct] = useState(null);
 
-  const { id } = useParams();
+  const { number } = useParams();
 
   useEffect(() => {
-    if (id) {
-      const selectedProducts = products.find((item) => item.id === Number(id));
+    if (number) {
+      const selectedProducts = products.find((item) => item.number === Number(number));
       setSingleProduct(selectedProducts);
     }
-  }, [id, products]);
+  }, [number, products]);
 
   if (isLoading) {
     return (
@@ -52,13 +52,13 @@ const ProductView = ({ products, isLoading }) => {
             {/* Left Side Image */}
             <div className="relative max-w-md mx-auto overflow-hidden">
               <img
-                src={singleProduct.image}
+                src={singleProduct.cover}
                 alt={singleProduct.title}
-                className="w-full h-auto rounded object-cover cursor-pointer transition-transform duration-300 hover:scale-105"
+                className="w-full h-max rounded object-cover cursor-pointer transition-transform duration-300 hover:scale-105"
               />
               <div className="absolute inset-0 hidden md:flex justify-center items-center bg-black bg-opacity-10 rounded-md cursor-zoom-in">
                 <img
-                  src={singleProduct.image}
+                  src={singleProduct.cover}
                   alt={singleProduct.title}
                   className="w-full h-auto rounded-md"
                 />
@@ -76,6 +76,7 @@ const ProductView = ({ products, isLoading }) => {
                 {/* Price */}
                 <span className="text-3xl text-orange-500 font-semibold">
                   Rs. {singleProduct.price}
+                  
                 </span>
                 <hr className="border-b border-dotted w-3/5 border-gray-400 mt-2" />
               </div>
