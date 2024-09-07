@@ -6,13 +6,15 @@ import {items} from "./BannerData"
 const BannerPage = () => {
     return (
       <>
-        <Carousel indicators={false}>
+      <div className='w-[92.5rem] pl-[98px]'>
+        <Carousel indicators={false} >
           {items.map((value, index) => (
             <Carousel.Item key={value.id}>
               <img src={value.Image} alt={value.title} />
             </Carousel.Item>
           ))}
         </Carousel>
+        </div>
       </>
     );
 };

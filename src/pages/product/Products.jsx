@@ -36,7 +36,7 @@ const Products = () => {
   return (
     <>
       <div className="font-poppins p-4">
-        <h1 className="text-2xl font-semibold mb-4 px-24">Trending Books</h1>
+        <h1 className="text-2xl font-semibold mb-4 pl-20">Trending Books</h1>
       </div>
       {isLoading ? (
         <div className="text-center">
@@ -62,7 +62,7 @@ const Products = () => {
         </div>
       ) : (
         <>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-24">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-24 ">
             {products.slice(0, visibleProducts).map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
