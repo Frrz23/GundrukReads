@@ -1,5 +1,5 @@
 import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin } from "react-icons/fi";
-import Logo from "../../assets/Images/logo/logo5.png";
+import Logo from "../../assets/Images/logo/logo9.png";
 import { NavLink } from "react-router-dom";
 import AppStore from "../../assets/Images/img/AppStore.png";
 import GooglePay from "../../assets/Images/img/GooglePay.png";
@@ -7,7 +7,7 @@ import hand from "../../assets/Images/img/hand.png";
 
 const Footer = () => {
   return (
-    <footer className="font-mono mt-10 p-6  max-w-full  bg-gray shadow-md border " >
+    <footer className="font-mono mt-10 p-6  max-w-full  bg-gray-100 shadow-md border " >
       <div className="flex ">
       <div className=" flex justify-between  w-full  ">
       <div>

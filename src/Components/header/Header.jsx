@@ -1,6 +1,6 @@
 import react from 'react';
 import { FiSearch,FiShoppingCart,FiHeart } from "react-icons/fi";
-import Logo from "../../assets/Images/logo/logo5.png";
+import Logo from "../../assets/Images/logo/logo9.png";
 import { NavLink } from 'react-router-dom';
 
 const Header=()=>{
@@ -9,10 +9,10 @@ const Header=()=>{
        <header className="font-poppins flex items-center justify-evenly  pb-4 pt-2 bg-white-200">
         <div className="flex itmes-center">
        <NavLink to="/">
-       <img src={Logo} alt="logo" className="w-full h-20 "/>
+       <img src={Logo} alt="logo" className="w-full h-[120px]  "/>
        </NavLink>
         </div>
-        <div className="flex items-center justify-center w-2/5 relative">
+        <div className="flex items-center  w-2/5 relative">
           <input
             type="text"
             placeholder="I'm searching for"

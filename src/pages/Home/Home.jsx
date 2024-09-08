@@ -5,7 +5,7 @@ import Products from '../product/Products';
 const Home = () => {
   return (
     <>
-    <div className='BannerPage'>
+    <div className='BannerPage '>
         <BannerPage/>
     </div>
     <div>
