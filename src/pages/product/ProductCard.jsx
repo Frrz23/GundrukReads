@@ -14,7 +14,7 @@ const ProductCard = ({ product }) => {
         <p className="text-gray-500">Rs. {product.price}</p>
         <Link
           to={`/product-view/${product.number}`}
-          className="mt-4 px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600 no-underline"
+          className="mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 no-underline"
         >
           View Details
         </Link>

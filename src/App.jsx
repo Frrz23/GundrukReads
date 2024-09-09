@@ -39,6 +39,7 @@ function App() {
   }, []);
   return [
     <>
+    <div className='bg-gray-50'>
     <Router>
       <ToastContainer />
       <Topheader title="GundrukReads" />
@@ -59,6 +60,7 @@ function App() {
       </Routes>
       <Footer/>
     </Router>
+    </div>
     </>
   ]
 }

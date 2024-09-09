@@ -71,7 +71,7 @@ const Products = () => {
             <div className="text-center mt-8">
               <button
                 onClick={handleLoadMore}
-                className="px-6 w-56 py-3 bg-orange-500 text-white rounded-sm hover:bg-orange-600"
+                className="px-6 w-56 py-3 bg-red-500 text-white rounded-sm hover:bg-red-600"
               >
                 Load More
               </button>

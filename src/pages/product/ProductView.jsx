@@ -74,7 +74,7 @@ const ProductView = ({ products, isLoading }) => {
 
               <div className="mb-4">
                 {/* Price */}
-                <span className="text-3xl text-orange-500 font-semibold">
+                <span className="text-3xl text-red-500 font-semibold">
                   Rs. {singleProduct.price}
                   
                 </span>
@@ -106,7 +106,7 @@ const ProductView = ({ products, isLoading }) => {
 
               <div className="mb-4 flex space-x-2">
                 {/* Buttons */}
-                <button className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded w-64">
+                <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded w-64">
                   Add to Cart
                 </button>
                 <button
