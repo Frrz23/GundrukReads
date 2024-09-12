@@ -14,6 +14,7 @@ import Pagenotfound from './pages/notfound/Pagenotfound.jsx';
 import Aboutus from './pages/aboutus/Aboutus.jsx';
 import Learnmore from './pages/learnmore/Learnmore.jsx';
 import Productview from './pages/product/ProductView.jsx';
+import FAQ from './pages/service/FAQ.jsx';
 function App() {
   const [products, setProducts] = useState([]);
   const [isLoading, setLoading] = useState(false);
@@ -54,7 +55,7 @@ function App() {
         <Route path='/aboutus' element={<Aboutus/>}></Route>
         <Route path='/more-info' element={<Learnmore/>}></Route>
         <Route path='/product-view/:number' element={<Productview isLoading={isLoading} products={products} />} ></Route>
-
+        <Route path='/gundrukreads-FAQ' element={<FAQ/>}></Route>
         
        
       </Routes>

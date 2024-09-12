@@ -31,8 +31,8 @@ const Footer = () => {
         <div className="flex flex-col ">
         <p className="font-bold text-[25px]  mb-2">Service</p>
         <div className="flex flex-col space-y-2 text-[17px] pl-0.5">
-        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500 ">FAQ</a>
-        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Chat With Us</a>
+        <NavLink to="/gundrukreads-FAQ" className="no-underline  text-slate-700 hover:underline hover:text-red-500 ">FAQ</NavLink>
+        <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Contact Us</a>
         <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Payment</a>
         <a href="#"to="/gundrukreads-Motto" className="no-underline  text-slate-700 hover:underline hover:text-red-500">Order</a>
         </div>
