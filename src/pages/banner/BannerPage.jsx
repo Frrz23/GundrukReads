@@ -6,7 +6,7 @@ import {items} from "./BannerData"
 const BannerPage = () => {
     return (
       <>
-      <div className='w-[92.5rem] pl-[98px]'>
+      <div className='w-[89rem] pl-[98px]'>
         <Carousel indicators={false} >
           {items.map((value, index) => (
             <Carousel.Item key={value.id}>

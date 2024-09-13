@@ -15,6 +15,7 @@ import Aboutus from './pages/aboutus/Aboutus.jsx';
 import Learnmore from './pages/learnmore/Learnmore.jsx';
 import Productview from './pages/product/ProductView.jsx';
 import FAQ from './pages/service/FAQ.jsx';
+import Contactus from './pages/contactus/Contactus.jsx';
 function App() {
   const [products, setProducts] = useState([]);
   const [isLoading, setLoading] = useState(false);
@@ -40,7 +41,7 @@ function App() {
   }, []);
   return [
     <>
-    <div className='bg-gray-50'>
+    <div className='bg-stone-100'>
     <Router>
       <ToastContainer />
       <Topheader title="GundrukReads" />
@@ -56,6 +57,7 @@ function App() {
         <Route path='/more-info' element={<Learnmore/>}></Route>
         <Route path='/product-view/:number' element={<Productview isLoading={isLoading} products={products} />} ></Route>
         <Route path='/gundrukreads-FAQ' element={<FAQ/>}></Route>
+        <Route path='/gundrukreads-contactus' element={<Contactus/>}></Route>
         
        
       </Routes>

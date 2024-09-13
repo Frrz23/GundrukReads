@@ -8,8 +8,8 @@ const TopHeader = (props) => {
 
   return (
     <>
-      <div className='font-poppins bg-gray-900 text-white py-2 pr-12 flex justify-end items-center shadow-md'>
-        <div className='flex items-center space-x-7'>
+      <div className='font-poppins bg-gray-900 text-white py-2 pr-24 flex justify-end items-center shadow-md'>
+        <div className='flex items-center space-x-8'>
           <NavLink to="/gundrukreads-login" className='text-sm font-medium text-white hover:text-blue-400 transition-colors duration-300 flex items-center space-x-1'>
             <FaSignInAlt />
             <span>Login/Register</span>
