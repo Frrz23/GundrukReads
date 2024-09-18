@@ -4,3 +4,9 @@
 .label-field{
     @apply text-[18px]
 }
+.text-contact{
+   @apply font-mono text-gray-600 text-[15px]
+}
+.text-contact-button{
+    @apply font-mono bg-black text-white rounded w-[121px] block text-center no-underline
+}
