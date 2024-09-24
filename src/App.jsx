@@ -16,6 +16,7 @@ import Learnmore from './pages/learnmore/Learnmore.jsx';
 import Productview from './pages/product/ProductView.jsx';
 import FAQ from './pages/service/FAQ.jsx';
 import Contactus from './pages/contactus/Contactus.jsx';
+import Categories from './pages/categories/Categories.jsx';
 function App() {
   const [products, setProducts] = useState([]);
   const [isLoading, setLoading] = useState(false);
@@ -58,6 +59,7 @@ function App() {
         <Route path='/product-view/:number' element={<Productview isLoading={isLoading} products={products} />} ></Route>
         <Route path='/gundrukreads-FAQ' element={<FAQ/>}></Route>
         <Route path='/gundrukreads-contactus' element={<Contactus/>}></Route>
+        <Route path='/new-arrivals' element={<Categories/>}></Route>
         
        
       </Routes>
